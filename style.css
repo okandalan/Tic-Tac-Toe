@@ -1,0 +1,83 @@
+/* -------RESET-------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.heading {
+    font-size: 5rem;
+}
+
+.game-board-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(204, 195, 195);
+    padding: 20px;
+}
+
+.message {
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.game-board {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.reset-btn {
+    background-color:  rgb(19, 160, 241);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.reset-btn:hover {
+    cursor: pointer;
+    background-color:  rgb(19, 89, 241);
+}
+
+.sign {
+    font-size: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
